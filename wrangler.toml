@@ -1,0 +1,9 @@
+name = "notifier"
+compatibility_date = "2023-01-01"
+
+[durable_objects]
+bindings = [{ name = "NOTIFIER", class_name = "Notifier" }]
+
+[[migrations]]
+tag = "v1"
+new_classes = ["Notifier"]

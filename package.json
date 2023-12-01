@@ -1,0 +1,19 @@
+{
+  "name": "hono-do-notifier",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "wrangler dev src/index.ts --port 3000",
+    "test": "tsx ./script/client",
+    "deploy": "wrangler deploy --minify src/index.ts"
+  },
+  "dependencies": {
+    "hono": "^3.6.0",
+    "hono-do": "^1.0.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230821.0",
+    "tsx": "^4.6.1",
+    "wrangler": "^3.7.0"
+  }
+}
